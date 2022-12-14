@@ -50,7 +50,7 @@ class RepositoryTest {
     }
 
     @Test
-    public void shouldRemoveByIdException() {
+    void shouldRemoveByIdException() {
         assertThrows(NotFoundException.class, () -> {
             repository.removeById(8);
         });
